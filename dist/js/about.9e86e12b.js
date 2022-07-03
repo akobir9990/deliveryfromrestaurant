@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfood"]=self["webpackChunkfood"]||[]).push([[443],{2204:function(n,u,r){r.r(u),r.d(u,{default:function(){return i}});var t=r(3396);const e={class:"about"},o=(0,t._)("h1",null,"Эта страница пока пуста",-1),c=[o];function s(n,u){return(0,t.wg)(),(0,t.iD)("div",e,c)}var a=r(89);const f={},d=(0,a.Z)(f,[["render",s]]);var i=d}}]);
+//# sourceMappingURL=about.9e86e12b.js.map
