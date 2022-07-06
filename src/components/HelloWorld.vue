@@ -177,7 +177,11 @@ export default {
           }
           .path {
             position: relative;
-
+            transition: 0.2s;
+            cursor: pointer;
+            &:hover {
+              transform: scale(1.2);
+            }
             svg {
               position: relative;
               width: 25px;
@@ -254,6 +258,13 @@ export default {
           display: flex;
           justify-content: space-between;
           align-items: center;
+
+          & button {
+            transition: 00.2s;
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
           .number {
             font-size: 18px;
             font-weight: 700;
@@ -292,6 +303,10 @@ export default {
             font-weight: 700;
             line-height: 20px;
             letter-spacing: 0em;
+            transition: 0.2s;
+            &:hover {
+              transform: scale(1.05);
+            }
           }
         }
       }

@@ -28,12 +28,6 @@
     </div>
   </header>
 </template>
-<script>
-export default {
-  setup() {},
-};
-</script>
-
 <style lang="scss" scoped>
 .nav {
   display: flex;
@@ -54,13 +48,18 @@ export default {
       background: #25d366;
       border: none;
       color: #fff;
-      //styleName: Button;
       font-family: Gilroy;
       font-size: 18px;
       font-weight: 700;
       line-height: 20px;
       letter-spacing: 0em;
       text-align: left;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.035);
+        box-shadow: 5x 5px 10px #25d366;
+      }
     }
     .order {
       height: 40px;
@@ -76,14 +75,17 @@ export default {
         -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #ffffff,
         5px 5px 20px #d3d3d3;
       border-radius: 30px;
-
-      //styleName: 1;
       font-family: Gilroy;
       font-size: 18px;
       font-weight: 700;
       line-height: 20px;
       letter-spacing: 0em;
       text-align: left;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.035);
+      }
     }
     .profile {
       height: 40px;
@@ -97,6 +99,17 @@ export default {
       box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08),
         -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #ffffff,
         5px 5px 20px #d3d3d3;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.035);
+      }
+      & img {
+        transition: 0.3s;
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 }
@@ -122,14 +135,12 @@ export default {
       left: 425px;
       top: 200px;
       padding: 50px 0 0 50px;
-
       font-family: Gilroy;
       font-size: 50px;
       font-weight: 700;
       line-height: 62px;
       letter-spacing: 0em;
       text-align: left;
-
       color: #ffffff;
     }
     .playStory {
@@ -142,16 +153,13 @@ export default {
       padding: 0 20px 0 30px;
       flex-direction: row;
       border-radius: 99px;
-
       background: #212629;
       border: none;
       box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5),
         -1px -1px 6px rgba(255, 255, 255, 0.05),
         -5px -5px 20px rgba(255, 255, 255, 0.1), 5px 5px 20px rgba(0, 0, 0, 0.8);
       border-radius: 99px;
-
       border-radius: nullpx;
-      //styleName: Button;
       font-family: Gilroy;
       font-size: 18px;
       font-weight: 700;
@@ -159,6 +167,10 @@ export default {
       letter-spacing: 0em;
       text-align: left;
       color: #fe9102;
+      transition: 0.2s;
+      &:hover {
+        transform: scale(1.035);
+      }
     }
   }
 }

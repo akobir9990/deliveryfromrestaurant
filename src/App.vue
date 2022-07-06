@@ -8,7 +8,13 @@
           <router-link to="/about">Корпоративные заказы</router-link>
         </div>
         <div class="mainBtns">
-          <button @click="btn.clicked = !btn.clicked" :class="{'click': btn.clicked}" class="btn" v-for="btn in mainBtns" :key="btn.index">
+          <button
+            @click="btn.clicked = !btn.clicked"
+            :class="{ click: btn.clicked }"
+            class="btn"
+            v-for="btn in mainBtns"
+            :key="btn.index"
+          >
             {{ btn.name }}
           </button>
         </div>
@@ -82,10 +88,15 @@ body {
     border: none;
     border-radius: 99px;
     background: #e9e9e9;
-    transition: .2s;
+    transition: 0.2s;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08),
       -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #ffffff,
       5px 5px 20px #d3d3d3;
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      color: #fd9002;
+    }
 
     &.click {
       box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.8),
@@ -93,7 +104,7 @@ body {
         inset 1px 1px 3px rgba(0, 0, 0, 0.15),
         inset 6px 6px 5px rgba(0, 0, 0, 0.06);
       background: #e9e9e9;
-      color: #FD9002;
+      color: #fd9002;
       font-weight: bold;
     }
   }
@@ -105,9 +116,8 @@ body {
     text-align: left;
     color: #5d6164;
 
-
     &.router-link-exact-active {
-      color: #FD9002;
+      color: #fd9002;
     }
   }
 }
